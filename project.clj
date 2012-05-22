@@ -1,12 +1,13 @@
-(defproject clojure-hadoop "1.4.1"
+(defproject clojure-hadoop "1.4.1-cdh3u3"
   :description "Library to aid writing Hadoop jobs in Clojure."
   :url "http://github.com/alexott/clojure-hadoop"
   :license {:name "Eclipse Public License 1.0"
             :url "http://opensource.org/licenses/eclipse-1.0.php"
             :distribution "repo"
             :comments "Same license as Clojure"}
+  :repositories { "cdh-maven-repo" "http://dali.mitre.org/nexus/content/repositories/cloudera-cdh-releases" }
   :dependencies [[org.clojure/clojure "1.3.0"]
-                 [org.apache.hadoop/hadoop-core "1.0.2"]
+                 [org.apache.hadoop/hadoop-core "0.20.2-cdh3u3"]
                  [log4j/log4j "1.2.16" :exclusions [javax.mail/mail
                                                     javax.jms/jms
                                                     com.sun.jdmk/jmxtools
